@@ -56,10 +56,9 @@
                     <td>{{ todo.desc }}</td>
                     <td>{{ todo.date_created }}</td>
                     <td>
-                        <a href="/update/{{ todo.Sno }}" class="btn btn-outline-info">Update</a>
-                    </td>
-                    <td>
-                        <a href="/delete/{{ todo.Sno }}" class="btn btn-outline-danger">Delete</a>
+                        <a href="/update/{{ todo.Sno }}"  type="button" class="btn btn-outline-info btn-sm mx-1">Update</a>
+                
+                        <a href="/delete/{{ todo.Sno }}" type="button" class="btn btn-outline-danger btn-sm mx-1">Delete</a>
                     </td>
                 </tr>
                 {% endfor %}
