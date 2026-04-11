@@ -26,11 +26,7 @@ def hello_world():
         db.session.commit()
     allTodo = Todo.query.all()
     return render_template("index.html", allTodo=allTodo)
-@app.route('/show')
-def product():
-    allTodo = Todo.query.all()
-    print(allTodo)
-    return 'Thise is product page'    
+   
 
 @app.route('/update/<int:sno>', methods=['GET', 'POST'])
 def update(sno):
@@ -56,6 +52,10 @@ def delete(sno):
 @app.route('/about')
 def about():
     return render_template("about.html")
+
+@app.route("/portfolio")
+def contact():
+    return render_template("portfolio.html")  
 
 if __name__ == "__main__":
     app.run(debug=True)
