@@ -2,10 +2,61 @@
 {% block title %}About{% endblock title %}
 {% block body %}
 
-<h1>About This Todo App</h1>
-<p>
-    This is a simple Todo application built using Flask and SQLAlchemy.
-    It allows users to add, view, and delete tasks.
-</p>
-<a href="/">Go Back Home</a>
+<div class="container my-4">
+    <h1 class="mb-3">About MyTodo App</h1>
+
+    <p class="lead">
+        MyTodo is a simple Flask-based web application that helps you manage
+        your daily tasks efficiently.
+    </p>
+
+    <hr>
+
+    <h3>Features</h3>
+    <ul>
+        <li>Add new todos with title and description</li>
+        <li>View all saved todos in a table</li>
+        <li>Update existing todos</li>
+        <li>Delete completed or unwanted todos</li>
+    </ul>
+
+    <hr>
+
+    <h3>How to Use</h3>
+
+    <ol>
+        <li>
+            <strong>Add Todo</strong><br>
+            Fill the <b>Todo Title</b> and <b>Description</b> fields and click
+            <span class="badge bg-info">Submit</span>.
+        </li>
+        <li class="mt-2">
+            <strong>View Todos</strong><br>
+            All your todos will appear in the table below the form.
+        </li>
+        <li class="mt-2">
+            <strong>Update Todo</strong><br>
+            Click the <span class="badge bg-info">Update</span> button to edit a todo.
+        </li>
+        <li class="mt-2">
+            <strong>Delete Todo</strong><br>
+            Click the <span class="badge bg-danger">Delete</span> button to remove a todo.
+        </li>
+    </ol>
+
+    <hr>
+
+    <h3>Technology Used</h3>
+    <ul>
+        <li>Python (Flask Framework)</li>
+        <li>SQLite Database</li>
+        <li>HTML, CSS, Bootstrap 5</li>
+    </ul>
+
+    <hr>
+
+    <p class="text-muted">
+        Created as a learning project to understand Flask CRUD operations.
+    </p>
+</div>
 {% endblock body %}
