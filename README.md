@@ -33,7 +33,7 @@ This project allows users to add, view, and delete todo tasks using a clean web 
 ![Home Page](screenshots/home1.png)
 
 ### Add Todo
-![Add Todo](screenshots/home1.png)
+![Add Todo](screenshots/home2.png)
 
 ### About Page
 ![About Page](screenshots/about.png)
